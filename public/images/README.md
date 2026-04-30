@@ -1,8 +1,8 @@
 # Images
 
-- **`hero/`** — Rotating home hero frames (from live site headers).
-- **`brands/`** — Portfolio tiles (one file per brand slug).
-- **`news/`** — Optional thumbnails for news posts.
+- **`hero/`** - Rotating home hero frames (from live site headers).
+- **`brands/`** - Portfolio tiles (one file per brand slug).
+- **`news/`** - Optional thumbnails for news posts.
 
 Regenerate from a fresh HTML mirror:
 

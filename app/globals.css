@@ -33,7 +33,7 @@ body {
   position: relative;
 }
 
-/* Paper grain — barely visible, reads as print stock */
+/* Paper grain - barely visible, reads as print stock */
 body::before {
   content: "";
   pointer-events: none;

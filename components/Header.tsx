@@ -52,7 +52,7 @@ export function Header() {
           <Link
             href="/"
             className="group flex h-10 w-10 shrink-0 items-center justify-center border border-border/90 bg-surface/90 font-serif text-lg font-medium tracking-tight text-foreground shadow-sm transition-[border-color,box-shadow,transform] duration-500 [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] hover:border-bronze/50 hover:shadow-md sm:h-11 sm:w-11"
-            aria-label="Oatley Fine Wine Merchants — home"
+            aria-label="Oatley Fine Wine Merchants - home"
           >
             <span className="translate-y-px transition-transform duration-500 group-hover:scale-105">
               O

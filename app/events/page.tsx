@@ -3,7 +3,7 @@ import { Container } from "@/components/Container";
 
 export const metadata: Metadata = {
   title: "Events",
-  description: "Events — Oatley Fine Wine Merchants",
+  description: "Events - Oatley Fine Wine Merchants",
 };
 
 export default function EventsPage() {
@@ -18,7 +18,7 @@ export default function EventsPage() {
         </h1>
         <p className="mx-auto mt-8 max-w-md text-base leading-relaxed text-muted sm:text-lg">
           Trade tastings, portfolio briefings, and regional showcases appear here
-          when they are scheduled. Right now the diary is clear — check back, or
+          when they are scheduled. Right now the diary is clear - check back, or
           reach out for a private walk-through of the portfolio.
         </p>
         <div
@@ -29,7 +29,7 @@ export default function EventsPage() {
           “The room fills when the wine speaks for itself.”
         </p>
         <p className="mt-3 text-[11px] uppercase tracking-[0.2em] text-muted">
-          Demo line — not an official quote
+          Demo line - not an official quote
         </p>
       </div>
     </Container>

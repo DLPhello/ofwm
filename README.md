@@ -49,4 +49,4 @@ This app is a static export (`output: "export"`). The workflow `.github/workflow
 
 3. Re-run the failed workflow: **Actions → failed run → Re-run all jobs**.
 
-Ignore GitHub’s **“Next.js — Configure”** starter on the Pages screen if you already have `.github/workflows/deploy-pages.yml`; that template is optional and duplicates what this repo ships.
+Ignore GitHub’s **“Next.js - Configure”** starter on the Pages screen if you already have `.github/workflows/deploy-pages.yml`; that template is optional and duplicates what this repo ships.

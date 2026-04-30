@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
-/** Legacy path from WordPress — static export cannot use next.config redirects. */
+/** Legacy path from WordPress - static export cannot use next.config redirects. */
 export default function PortfolioRedirectPage() {
   const router = useRouter();
   useEffect(() => {

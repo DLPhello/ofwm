@@ -1,7 +1,7 @@
 /**
  * Reads content/extracted/portfolio.json + news.json, downloads images via curl,
  * writes lib/portfolio-data.json + lib/news-data.json.
- * Live origin often returns captcha HTML to bots — prefer: save assets with a browser
+ * Live origin often returns captcha HTML to bots - prefer: save assets with a browser
  * extension into downloaded_images/, then run: npm run sync-images
  * Run: node scripts/download-images.mjs
  */

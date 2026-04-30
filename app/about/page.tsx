@@ -5,7 +5,7 @@ import { aboutParagraphs, aboutPullQuote } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Oatley Fine Wine Merchants — Australian premium wine distribution since 2015.",
+    "Oatley Fine Wine Merchants - Australian premium wine distribution since 2015.",
 };
 
 export default function AboutPage() {

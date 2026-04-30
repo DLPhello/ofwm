@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
-/** Legacy WordPress news URL — redirects client-side for static export. */
+/** Legacy WordPress news URL - redirects client-side for static export. */
 export default function UpdatesRedirectPage() {
   const router = useRouter();
   useEffect(() => {

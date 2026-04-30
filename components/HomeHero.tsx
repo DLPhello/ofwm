@@ -105,7 +105,7 @@ export function HomeHero({ images }: { images: string[] }) {
             Oatley Fine Wine Merchants
           </h1>
           <p className="mt-6 max-w-lg text-base leading-relaxed text-stone-200/95 sm:text-lg">
-            Independent premium wine distribution — family-owned producers,
+            Independent premium wine distribution - family-owned producers,
             national reach, service-led partnerships.
           </p>
         </div>

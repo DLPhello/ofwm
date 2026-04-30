@@ -22,7 +22,7 @@ export default function NewsIndexPage() {
           Latest news
         </h1>
         <p className="mt-5 text-sm leading-relaxed text-muted sm:text-base">
-          Archive of announcements — dates reflect original publication.
+          Archive of announcements - dates reflect original publication.
         </p>
       </header>
 

@@ -56,7 +56,7 @@ export function BrandPortfolio({ brands }: { brands: Brand[] }) {
             </h2>
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted sm:text-base">
               {brands.length} brands and associations represented across Australia.
-              Filter by name — tiles link to producer sites where available.
+              Filter by name - tiles link to producer sites where available.
             </p>
           </div>
           <label className="sr-only" htmlFor="brand-filter">

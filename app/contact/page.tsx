@@ -5,7 +5,7 @@ import { CREDIT_NOTE_PDF, PRIVACY_URL, TERMS_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact Oatley Fine Wine Merchants — trade enquiries.",
+  description: "Contact Oatley Fine Wine Merchants for trade enquiries.",
 };
 
 const mailtoOrders = "mailto:orders@oatleywines.com.au";
@@ -128,7 +128,7 @@ export default function ContactPage() {
               </h2>
               <ul className="mt-3 list-disc space-y-2 pl-5">
                 <li>
-                  <span className="text-muted">Credit application — </span>
+                  <span className="text-muted">Credit application: </span>
                   <span className="text-muted">
                     request the latest PDF from accounts or your representative.
                   </span>
@@ -140,7 +140,7 @@ export default function ContactPage() {
                     rel="noopener noreferrer"
                     className="text-foreground underline-offset-2 hover:underline"
                   >
-                    Credit note request form (PDF)
+                    Credit application form (PDF)
                   </a>
                 </li>
               </ul>
@@ -167,11 +167,11 @@ export default function ContactPage() {
               Send a message
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-muted">
-              Opens your email client — nothing is stored on this site.
+              Opens your email client; nothing is stored on this site.
             </p>
             <p className="mt-10">
               <a
-                href={`mailto:orders@oatleywines.com.au?subject=${encodeURIComponent("Trade enquiry — Oatley Fine Wine Merchants")}`}
+                href={`mailto:orders@oatleywines.com.au?subject=${encodeURIComponent("Trade enquiry - Oatley Fine Wine Merchants")}`}
                 className="inline-flex border border-accent bg-accent px-8 py-3.5 text-sm font-medium tracking-wide text-white shadow-[0_12px_32px_-12px_rgba(107,28,44,0.45)] transition-[transform,box-shadow,opacity] duration-500 [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:opacity-95 hover:shadow-[0_16px_40px_-10px_rgba(107,28,44,0.4)]"
               >
                 Email orders@oatleywines.com.au
@@ -181,8 +181,6 @@ export default function ContactPage() {
               Legal:{" "}
               <Link
                 href={TERMS_URL}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="text-foreground underline-offset-2 hover:underline"
               >
                 Terms of use
@@ -190,8 +188,6 @@ export default function ContactPage() {
               {" · "}
               <Link
                 href={PRIVACY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
                 className="text-foreground underline-offset-2 hover:underline"
               >
                 Privacy policy
