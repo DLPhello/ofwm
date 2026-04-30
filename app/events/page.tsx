@@ -26,10 +26,10 @@ export default function EventsPage() {
           aria-hidden
         />
         <p className="mt-10 font-serif text-lg font-light italic text-foreground/70">
-          “The room fills when the wine speaks for itself.”
+          “Wine is sunlight, held together by water.”
         </p>
         <p className="mt-3 text-[11px] uppercase tracking-[0.2em] text-muted">
-          Demo line - not an official quote
+          Galileo Galilei
         </p>
       </div>
     </Container>
