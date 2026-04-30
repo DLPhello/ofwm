@@ -1,4 +1,4 @@
-# Build static export and deploy to GitHub Pages (project site: /ofw).
+# Build static export and deploy to GitHub Pages (project site: /ofwm).
 # Repo → Settings → Pages → Build and deployment → Source: GitHub Actions
 name: Deploy to GitHub Pages
 
@@ -28,7 +28,7 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          NEXT_PUBLIC_BASE_PATH: /ofw
+          NEXT_PUBLIC_BASE_PATH: /ofwm
       - uses: actions/upload-pages-artifact@v3
         with:
           path: out

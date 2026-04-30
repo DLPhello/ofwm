@@ -37,7 +37,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## GitHub Pages
 
-This app is a static export (`output: "export"`). The workflow `.github/workflows/deploy-pages.yml` builds with `NEXT_PUBLIC_BASE_PATH=/ofw` so the site resolves at **`https://<user>.github.io/ofw/`**.
+This app is a static export (`output: "export"`). The workflow `.github/workflows/deploy-pages.yml` builds with `NEXT_PUBLIC_BASE_PATH=/ofwm` so the site resolves at **`https://<user>.github.io/ofwm/`**.
 
 ### One-time repo settings
 
