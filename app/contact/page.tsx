@@ -157,12 +157,12 @@ export default function ContactPage() {
             </section>
           </div>
         </div>
-        <div className="relative lg:col-span-7 lg:pl-12 lg:pt-16">
-          <div
-            className="pointer-events-none absolute -inset-px left-0 top-0 hidden rounded-sm bg-gradient-to-br from-bronze/40 via-accent/30 to-bronze/25 opacity-90 lg:block lg:rounded-l-none lg:rounded-r-sm"
-            aria-hidden
-          />
-          <div className="relative rounded-sm border border-border/80 bg-surface/95 p-8 shadow-[0_24px_60px_-30px_rgba(15,12,10,0.12)] sm:p-10 lg:border-l-0 lg:pl-12">
+        <div className="relative lg:col-span-7 lg:pl-12 lg:pt-16 lg:self-start">
+          <div className="relative rounded-sm border border-border/80 bg-surface/95 p-8 shadow-[0_24px_60px_-30px_rgba(15,12,10,0.12)] sm:p-10 lg:pl-12">
+            <div
+              className="pointer-events-none absolute inset-y-0 left-0 w-2 rounded-l-sm bg-gradient-to-b from-bronze/55 to-accent/35"
+              aria-hidden
+            />
             <h2 className="font-serif text-2xl font-light text-foreground">
               Send a message
             </h2>
