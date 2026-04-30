@@ -74,7 +74,7 @@ export function HomeHero({ images }: { images: string[] }) {
 
       {list.length > 1 ? (
         <div
-          className="absolute bottom-24 left-1/2 z-[4] flex -translate-x-1/2 gap-2 sm:bottom-32"
+          className="absolute bottom-10 left-1/2 z-[4] flex -translate-x-1/2 gap-2 sm:bottom-14 sm:left-auto sm:right-8 sm:translate-x-0 md:right-10"
           role="tablist"
           aria-label="Hero slides"
         >
