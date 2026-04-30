@@ -157,7 +157,7 @@ export default function ContactPage() {
             </section>
           </div>
         </div>
-        <div className="relative lg:col-span-7 lg:pl-12">
+        <div className="relative lg:col-span-7 lg:pl-12 lg:pt-16">
           <div
             className="pointer-events-none absolute -inset-px left-0 top-0 hidden rounded-sm bg-gradient-to-br from-bronze/40 via-accent/30 to-bronze/25 opacity-90 lg:block lg:rounded-l-none lg:rounded-r-sm"
             aria-hidden
