@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "extract": "node scripts/extract-from-archive.mjs",
+    "download-assets": "node scripts/download-images.mjs",
+    "sync-images": "node scripts/sync-downloaded-images.mjs",
+    "fix-images": "node scripts/fix-corrupt-images.mjs",
+    "content:build": "npm run extract && npm run download-assets"
   },
   "dependencies": {
     "next": "16.2.4",
