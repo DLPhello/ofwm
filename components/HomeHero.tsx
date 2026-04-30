@@ -4,7 +4,8 @@ import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 import { withBasePath } from "@/lib/basePath";
 
-const ROTATE_MS = 6800;
+/** Time each slide stays fully readable before crossfading to the next */
+const ROTATE_MS = 5200;
 
 export function HomeHero({ images }: { images: string[] }) {
   const list = images.length ? images : [withBasePath("/images/hero/hero-0.jpg")];
@@ -43,7 +44,7 @@ export function HomeHero({ images }: { images: string[] }) {
         {list.map((src, idx) => (
           <div
             key={src}
-            className={`absolute inset-0 transition-opacity duration-[1400ms] [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] ${
+            className={`absolute inset-0 transition-opacity duration-[1100ms] [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] ${
               idx === active ? "z-[1] opacity-100" : "z-0 opacity-0"
             }`}
             aria-hidden={idx !== active}
