@@ -11,3 +11,7 @@ export const aboutParagraphs = [
   "Oatley Fine Wine Merchants is focused on becoming a leading independent premium wine merchant recognised for the quality of the wines we offer and for the services we provide to our customers. We are committed to offering the flexibility of representation that meets your venue’s specific needs.",
   "All of our producers are independent and family owned, where heritage and authenticity are key. We work in partnership with the wineries we represent with a commitment to deliver wines of the highest quality and standards. We will continue to evolve the portfolio of wines we offer to ensure we meet the challenges of a constantly changing market and evolving consumer preferences.",
 ];
+
+/** Pull quote — lifted from the third paragraph for editorial emphasis */
+export const aboutPullQuote =
+  "Heritage and authenticity are key — we work in partnership with the wineries we represent.";

@@ -157,39 +157,47 @@ export default function ContactPage() {
             </section>
           </div>
         </div>
-        <div className="lg:col-span-7 lg:border-l lg:border-border lg:pl-12">
-          <h2 className="font-serif text-xl text-foreground">Send a message</h2>
-          <p className="mt-2 text-sm text-muted">
-            Opens your email client — nothing is stored on this site.
-          </p>
-          <p className="mt-8">
-            <a
-              href={`mailto:orders@oatleywines.com.au?subject=${encodeURIComponent("Trade enquiry — Oatley Fine Wine Merchants")}`}
-              className="inline-flex border border-accent bg-accent px-8 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90"
-            >
-              Email orders@oatleywines.com.au
-            </a>
-          </p>
-          <p className="mt-12 text-xs text-muted">
-            Legal:{" "}
-            <Link
-              href={TERMS_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-foreground underline-offset-2 hover:underline"
-            >
-              Terms of use
-            </Link>
-            {" · "}
-            <Link
-              href={PRIVACY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-foreground underline-offset-2 hover:underline"
-            >
-              Privacy policy
-            </Link>
-          </p>
+        <div className="relative lg:col-span-7 lg:pl-12">
+          <div
+            className="pointer-events-none absolute -inset-px left-0 top-0 hidden rounded-sm bg-gradient-to-br from-bronze/40 via-accent/30 to-bronze/25 opacity-90 lg:block lg:rounded-l-none lg:rounded-r-sm"
+            aria-hidden
+          />
+          <div className="relative rounded-sm border border-border/80 bg-surface/95 p-8 shadow-[0_24px_60px_-30px_rgba(15,12,10,0.12)] sm:p-10 lg:border-l-0 lg:pl-12">
+            <h2 className="font-serif text-2xl font-light text-foreground">
+              Send a message
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-muted">
+              Opens your email client — nothing is stored on this site.
+            </p>
+            <p className="mt-10">
+              <a
+                href={`mailto:orders@oatleywines.com.au?subject=${encodeURIComponent("Trade enquiry — Oatley Fine Wine Merchants")}`}
+                className="inline-flex border border-accent bg-accent px-8 py-3.5 text-sm font-medium tracking-wide text-white shadow-[0_12px_32px_-12px_rgba(107,28,44,0.45)] transition-[transform,box-shadow,opacity] duration-500 [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:opacity-95 hover:shadow-[0_16px_40px_-10px_rgba(107,28,44,0.4)]"
+              >
+                Email orders@oatleywines.com.au
+              </a>
+            </p>
+            <p className="mt-12 text-xs text-muted">
+              Legal:{" "}
+              <Link
+                href={TERMS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground underline-offset-2 hover:underline"
+              >
+                Terms of use
+              </Link>
+              {" · "}
+              <Link
+                href={PRIVACY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground underline-offset-2 hover:underline"
+              >
+                Privacy policy
+              </Link>
+            </p>
+          </div>
         </div>
       </div>
     </Container>

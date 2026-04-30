@@ -29,17 +29,21 @@ export default async function NewsArticlePage({ params }: Props) {
   return (
     <Container className="py-16 sm:py-24">
       <article className="mx-auto max-w-2xl">
-        <p className="text-[11px] font-medium uppercase tracking-[0.3em] text-muted">
+        <div
+          className="h-1 w-12 rounded-full bg-gradient-to-r from-accent to-bronze"
+          aria-hidden
+        />
+        <p className="mt-8 text-[11px] font-semibold uppercase tracking-[0.3em] text-muted">
           News
         </p>
         {post.date ? (
           <time className="mt-3 block text-sm text-muted">{post.date}</time>
         ) : null}
-        <h1 className="mt-4 font-serif text-3xl font-medium tracking-tight text-foreground sm:text-4xl">
+        <h1 className="mt-5 font-serif text-3xl font-light leading-[1.12] tracking-tight text-foreground sm:text-4xl md:text-[2.65rem]">
           {post.title}
         </h1>
         {post.image ? (
-          <div className="relative mt-10 aspect-[16/10] w-full overflow-hidden bg-stone-100">
+          <div className="relative mt-12 aspect-[16/10] w-full overflow-hidden rounded-sm border border-border/70 bg-stone-100 shadow-[0_20px_50px_-24px_rgba(15,12,10,0.15)]">
             <Image
               src={post.image}
               alt={post.title}
@@ -50,26 +54,26 @@ export default async function NewsArticlePage({ params }: Props) {
           </div>
         ) : null}
         {post.excerpt ? (
-          <p className="mt-10 text-base leading-relaxed text-foreground/90">
+          <p className="mt-12 text-lg leading-relaxed text-foreground/90">
             {post.excerpt}
           </p>
         ) : null}
-        <p className="mt-10 text-sm text-muted">
+        <p className="mt-12 text-sm text-muted">
           Full article on the{" "}
           <a
             href={post.sourceUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-foreground underline-offset-2 hover:underline"
+            className="font-medium text-foreground underline-offset-4 transition hover:underline"
           >
             previous site
           </a>
           .
         </p>
-        <p className="mt-12">
+        <p className="mt-14">
           <Link
             href="/news"
-            className="text-sm font-medium text-foreground underline-offset-4 hover:underline"
+            className="text-[11px] font-semibold uppercase tracking-[0.2em] text-foreground underline-offset-4 transition hover:underline"
           >
             ← All news
           </Link>
