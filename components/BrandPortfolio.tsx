@@ -54,10 +54,41 @@ export function BrandPortfolio({ brands }: { brands: Brand[] }) {
             >
               Our producers
             </h2>
-            <p className="mt-4 max-w-xl text-sm leading-relaxed text-muted sm:text-base">
-              {brands.length} brands and associations represented across Australia.
-              Filter by name - tiles link to producer sites where available.
-            </p>
+            <div className="mt-4 max-w-xl text-sm leading-relaxed text-muted sm:text-base">
+              <p>
+                {brands.length} brands and associations represented across
+                Australia.
+              </p>
+              <p className="mt-3 text-foreground/90">
+                To receive your own copy of our Oatley Portfolio book, please
+                contact:
+              </p>
+              <div className="mt-4 border-l-2 border-bronze/35 pl-4 text-foreground/90">
+                <p className="text-xs font-medium uppercase tracking-wide text-muted">
+                  Director of Sales &amp; Marketing
+                </p>
+                <p className="mt-1 font-medium text-foreground">Rob Hassan</p>
+                <p>
+                  <a
+                    href="mailto:rhassan@oatleywines.com.au"
+                    className="underline-offset-2 hover:underline"
+                  >
+                    rhassan@oatleywines.com.au
+                  </a>
+                </p>
+                <p>
+                  <a
+                    href="tel:0437400552"
+                    className="underline-offset-2 hover:underline"
+                  >
+                    0437 400 552
+                  </a>
+                </p>
+              </div>
+              <p className="mt-4 text-muted">
+                Filter by name - tiles link to producer sites where available.
+              </p>
+            </div>
           </div>
           <label className="sr-only" htmlFor="brand-filter">
             Filter brands

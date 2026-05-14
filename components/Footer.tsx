@@ -6,7 +6,6 @@ const links = [
   { href: "/", label: "Portfolio" },
   { href: "/about", label: "About" },
   { href: "/news", label: "News" },
-  { href: "/events", label: "Events" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -50,19 +49,47 @@ export function Footer() {
             </p>
             <ul className="mt-4 space-y-2 text-sm">
               <li>
-                <Link
+                <a
                   href={TERMS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-stone-300 transition-colors hover:text-white"
                 >
                   Terms of use
+                </a>
+              </li>
+              <li>
+                <a
+                  href={PRIVACY_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-stone-300 transition-colors hover:text-white"
+                >
+                  Privacy policy
+                </a>
+              </li>
+              <li>
+                <Link
+                  href="/code-of-conduct"
+                  className="text-stone-300 transition-colors hover:text-white"
+                >
+                  Code of Conduct
                 </Link>
               </li>
               <li>
                 <Link
-                  href={PRIVACY_URL}
+                  href="/safe-to-speak"
                   className="text-stone-300 transition-colors hover:text-white"
                 >
-                  Privacy policy
+                  Safe to Speak
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/ethical-dealing-principles"
+                  className="text-stone-300 transition-colors hover:text-white"
+                >
+                  Ethical Dealing Principles
                 </Link>
               </li>
             </ul>

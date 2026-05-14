@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Container } from "@/components/Container";
-import { CREDIT_NOTE_PDF, PRIVACY_URL, TERMS_URL } from "@/lib/site";
+import {
+  CREDIT_APPLICATION_FORM_URL,
+  CREDIT_REQUEST_FORM_PDF_PATH,
+  PRIVACY_URL,
+  TERMS_URL,
+} from "@/lib/site";
+import { withBasePath } from "@/lib/basePath";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -9,6 +14,10 @@ export const metadata: Metadata = {
 };
 
 const mailtoOrders = "mailto:orders@oatleywines.com.au";
+
+const creditRequestPdfHref = encodeURI(
+  withBasePath(CREDIT_REQUEST_FORM_PDF_PATH)
+);
 
 export default function ContactPage() {
   return (
@@ -48,12 +57,6 @@ export default function ContactPage() {
                 Key business contacts
               </h2>
               <ul className="mt-4 space-y-6">
-                <ContactBlock
-                  role="Chief Executive Officer"
-                  name="Anthony Roberts"
-                  email="aroberts@oatleywines.com.au"
-                  phone="0408 841 631"
-                />
                 <ContactBlock
                   role="Director of Sales &amp; Marketing"
                   name="Rob Hassan"
@@ -103,44 +106,28 @@ export default function ContactPage() {
             </section>
             <section>
               <h2 className="text-xs font-semibold uppercase tracking-wide text-muted">
-                Customer service
-              </h2>
-              <p className="mt-2">
-                <a
-                  href={mailtoOrders}
-                  className="text-foreground underline-offset-2 hover:underline"
-                >
-                  orders@oatleywines.com.au
-                </a>
-              </p>
-              <p>
-                <a
-                  href="tel:1800628539"
-                  className="text-foreground underline-offset-2 hover:underline"
-                >
-                  1800 628 539
-                </a>
-              </p>
-            </section>
-            <section>
-              <h2 className="text-xs font-semibold uppercase tracking-wide text-muted">
                 Forms
               </h2>
               <ul className="mt-3 list-disc space-y-2 pl-5">
                 <li>
-                  <span className="text-muted">Credit application: </span>
-                  <span className="text-muted">
-                    request the latest PDF from accounts or your representative.
-                  </span>
-                </li>
-                <li>
                   <a
-                    href={CREDIT_NOTE_PDF}
+                    href={CREDIT_APPLICATION_FORM_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-foreground underline-offset-2 hover:underline"
                   >
-                    Credit application form (PDF)
+                    Click here to access our online Credit Application Form
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={creditRequestPdfHref}
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-foreground underline-offset-2 hover:underline"
+                  >
+                    Click here to download our Credit Request Form PDF
                   </a>
                 </li>
               </ul>
@@ -179,19 +166,23 @@ export default function ContactPage() {
             </p>
             <p className="mt-12 text-xs text-muted">
               Legal:{" "}
-              <Link
+              <a
                 href={TERMS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-foreground underline-offset-2 hover:underline"
               >
                 Terms of use
-              </Link>
+              </a>
               {" · "}
-              <Link
+              <a
                 href={PRIVACY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-foreground underline-offset-2 hover:underline"
               >
                 Privacy policy
-              </Link>
+              </a>
             </p>
           </div>
         </div>

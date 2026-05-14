@@ -1,10 +1,14 @@
 /** Canonical copy aligned with oatleywines.com.au */
 
-export const TERMS_URL = "/terms-of-use";
-export const PRIVACY_URL = "/privacy-policy";
+export const TERMS_URL = "https://robertoatley.com.au/terms-of-use/?e";
+export const PRIVACY_URL = "https://robertoatley.com.au/privacy-policy/?e";
 
-export const CREDIT_NOTE_PDF =
-  "/67278-Credit-Request-Form.pdf";
+export const CREDIT_APPLICATION_FORM_URL =
+  "https://ofwm.applyeasy.com.au/credit/introduction";
+
+/** Public static file (spaces in filename). Prefix with `withBasePath` where basePath applies. */
+export const CREDIT_REQUEST_FORM_PDF_PATH =
+  "/67278 Credit Request Form.pdf";
 
 export const aboutParagraphs = [
   "Renamed in August 2015, Oatley Fine Wine Merchants is the Oatley family’s Australian wine distribution business.",
