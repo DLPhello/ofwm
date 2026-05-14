@@ -104,33 +104,95 @@ export default function ContactPage() {
                 </a>
               </p>
             </section>
-            <section>
-              <h2 className="text-xs font-semibold uppercase tracking-wide text-muted">
+            <section aria-labelledby="forms-heading">
+              <h2
+                id="forms-heading"
+                className="text-xs font-semibold uppercase tracking-wide text-muted"
+              >
                 Forms
               </h2>
-              <ul className="mt-3 list-disc space-y-2 pl-5">
-                <li>
-                  <a
-                    href={CREDIT_APPLICATION_FORM_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-foreground underline-offset-2 hover:underline"
-                  >
-                    Click here to access our online Credit Application Form
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={creditRequestPdfHref}
-                    download
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-foreground underline-offset-2 hover:underline"
-                  >
-                    Click here to download our Credit Request Form PDF
-                  </a>
-                </li>
-              </ul>
+              <div className="group/forms relative mt-5">
+                <div
+                  className="pointer-events-none absolute -inset-x-3 -inset-y-3 rounded-sm bg-[radial-gradient(ellipse_85%_60%_at_50%_0%,rgba(138,106,62,0.07),transparent_55%)] opacity-0 transition-opacity duration-700 [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] group-hover/forms:opacity-100"
+                  aria-hidden
+                />
+                <div
+                  className="relative overflow-hidden rounded-sm border border-border/70 bg-[linear-gradient(165deg,rgba(255,254,251,0.98),rgba(247,244,239,0.88))] p-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.65),0_20px_50px_-28px_rgba(15,12,10,0.14)] sm:p-7"
+                >
+                  <div
+                    className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-bronze/35 to-transparent"
+                    aria-hidden
+                  />
+                  <div className="border-l-2 border-bronze/40 pl-5 sm:pl-6">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-bronze/90">
+                      Trade desk
+                    </p>
+                    <h3 className="mt-2 font-serif text-2xl font-light tracking-tight text-foreground sm:text-[1.65rem] sm:leading-snug">
+                      Credit &amp; applications
+                    </h3>
+                    <p className="mt-2 max-w-md text-sm leading-relaxed text-muted">
+                      Two ways to submit trade credit details — choose the path
+                      that suits your workflow.
+                    </p>
+                    <ol className="mt-8 space-y-10">
+                      <li className="flex gap-4 sm:gap-6">
+                        <span
+                          className="select-none font-serif text-3xl font-light tabular-nums leading-none text-bronze/40 sm:text-[2rem]"
+                          aria-hidden
+                        >
+                          01
+                        </span>
+                        <div className="min-w-0 flex-1 space-y-3">
+                          <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-muted">
+                            Online application
+                          </p>
+                          <p className="text-sm leading-relaxed text-foreground/88">
+                            Secure hosted flow via ApplyEasy. Recommended when
+                            you want the fastest path to an assessment.
+                          </p>
+                          <a
+                            href={CREDIT_APPLICATION_FORM_URL}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group/cta relative inline-flex w-fit items-center gap-2.5 overflow-hidden rounded-sm border border-accent/90 bg-accent px-6 py-3 text-[13px] font-medium tracking-[0.12em] text-white uppercase shadow-[0_12px_32px_-14px_rgba(107,28,44,0.48)] transition-[transform,box-shadow,border-color] duration-500 [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] after:pointer-events-none after:absolute after:inset-0 after:bg-gradient-to-r after:from-white/0 after:via-white/18 after:to-white/0 after:opacity-0 after:transition-opacity after:duration-500 hover:-translate-y-0.5 hover:border-accent hover:shadow-[0_18px_44px_-16px_rgba(107,28,44,0.38)] hover:after:opacity-100"
+                          >
+                            Begin application
+                            <span className="sr-only"> (opens in new tab)</span>
+                            <ExternalLinkIcon className="relative z-[1] h-4 w-4 opacity-95 transition-transform duration-300 group-hover/cta:translate-x-0.5 group-hover/cta:-translate-y-0.5" />
+                          </a>
+                        </div>
+                      </li>
+                      <li className="flex gap-4 border-t border-border/60 pt-10 sm:gap-6">
+                        <span
+                          className="select-none font-serif text-3xl font-light tabular-nums leading-none text-bronze/35 sm:text-[2rem]"
+                          aria-hidden
+                        >
+                          02
+                        </span>
+                        <div className="min-w-0 flex-1 space-y-3">
+                          <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-muted">
+                            Printable form
+                          </p>
+                          <p className="text-sm leading-relaxed text-foreground/85">
+                            A traditional PDF for print, sign-off, and return
+                            through your representative or accounts.
+                          </p>
+                          <a
+                            href={creditRequestPdfHref}
+                            download
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group/pdf relative inline-flex w-fit items-center gap-2 rounded-sm border border-bronze/45 bg-surface/90 px-5 py-2.5 text-[13px] font-medium tracking-wide text-foreground shadow-[0_1px_0_rgba(255,255,255,0.65)_inset] transition-[transform,border-color,box-shadow,background-color] duration-500 [transition-timing-function:cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-0.5 hover:border-bronze/70 hover:bg-background/95 hover:shadow-[0_10px_28px_-18px_rgba(15,12,10,0.12)]"
+                          >
+                            Download PDF
+                            <PdfIcon className="h-4 w-4 text-bronze transition-transform duration-300 group-hover/pdf:translate-y-px" />
+                          </a>
+                        </div>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
             </section>
             <section>
               <h2 className="text-xs font-semibold uppercase tracking-wide text-muted">
@@ -188,6 +250,51 @@ export default function ContactPage() {
         </div>
       </div>
     </Container>
+  );
+}
+
+function ExternalLinkIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden
+    >
+      <path
+        d="M10 2.5h3.5V6M14 2.5L7.5 9M8 3.5H3.5a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V8"
+        stroke="currentColor"
+        strokeWidth="1.25"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
+function PdfIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden
+    >
+      <path
+        d="M9 2.5H4.5a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V6L9 2.5Z"
+        stroke="currentColor"
+        strokeWidth="1.25"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M9 2.5v3.5H12.5M5.5 11h5.5M5.5 8.5h5.5"
+        stroke="currentColor"
+        strokeWidth="1.25"
+        strokeLinecap="round"
+      />
+    </svg>
   );
 }
 

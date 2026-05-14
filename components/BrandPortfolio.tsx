@@ -64,7 +64,7 @@ export function BrandPortfolio({ brands }: { brands: Brand[] }) {
                 contact:
               </p>
               <div className="mt-4 border-l-2 border-bronze/35 pl-4 text-foreground/90">
-                <p className="text-xs font-medium uppercase tracking-wide text-muted">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-muted">
                   Director of Sales &amp; Marketing
                 </p>
                 <p className="mt-1 font-medium text-foreground">Rob Hassan</p>
