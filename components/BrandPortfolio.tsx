@@ -59,33 +59,49 @@ export function BrandPortfolio({ brands }: { brands: Brand[] }) {
                 {brands.length} brands and associations represented across
                 Australia.
               </p>
-              <p className="mt-3 text-foreground/90">
-                To receive your own copy of our Oatley Portfolio book, please
-                contact:
-              </p>
-              <div className="mt-4 border-l-2 border-bronze/35 pl-4 text-foreground/90">
-                <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-muted">
-                  Director of Sales &amp; Marketing
+              <aside className="relative mt-6 overflow-hidden rounded-sm border border-border/70 bg-[linear-gradient(165deg,rgba(255,254,251,0.98),rgba(247,244,239,0.88))] p-5 shadow-[inset_0_1px_0_rgba(255,255,255,0.65),0_16px_44px_-26px_rgba(15,12,10,0.12)] sm:p-6">
+                <div
+                  className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-bronze/35 to-transparent"
+                  aria-hidden
+                />
+                <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-bronze/90">
+                  Portfolio book
                 </p>
-                <p className="mt-1 font-medium text-foreground">Rob Hassan</p>
-                <p>
-                  <a
-                    href="mailto:rhassan@oatleywines.com.au"
-                    className="underline-offset-2 hover:underline"
-                  >
-                    rhassan@oatleywines.com.au
-                  </a>
+                <p className="mt-3 text-[15px] leading-relaxed text-foreground/90 sm:text-base">
+                  To receive your own copy of our{" "}
+                  <span className="font-serif text-[1.08em] font-medium tracking-tight text-foreground">
+                    Oatley Portfolio book
+                  </span>
+                  , please contact:
                 </p>
-                <p>
-                  <a
-                    href="tel:0437400552"
-                    className="underline-offset-2 hover:underline"
-                  >
-                    0437 400 552
-                  </a>
-                </p>
-              </div>
-              <p className="mt-4 text-muted">
+                <div className="mt-5 border-t border-border/60 pt-5">
+                  <div className="border-l-2 border-bronze/40 pl-5 text-foreground/90">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-muted">
+                      Director of Sales &amp; Marketing
+                    </p>
+                    <p className="mt-1.5 font-serif text-xl font-light tracking-tight text-foreground sm:text-2xl sm:leading-tight">
+                      Rob Hassan
+                    </p>
+                    <p className="mt-2">
+                      <a
+                        href="mailto:rhassan@oatleywines.com.au"
+                        className="text-sm text-foreground/90 underline decoration-bronze/35 decoration-1 underline-offset-[3px] transition-colors hover:decoration-accent hover:text-foreground"
+                      >
+                        rhassan@oatleywines.com.au
+                      </a>
+                    </p>
+                    <p>
+                      <a
+                        href="tel:0437400552"
+                        className="text-sm text-foreground/90 underline decoration-bronze/35 decoration-1 underline-offset-[3px] transition-colors hover:decoration-accent hover:text-foreground"
+                      >
+                        0437 400 552
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </aside>
+              <p className="mt-5 text-muted">
                 Filter by name - tiles link to producer sites where available.
               </p>
             </div>
