@@ -11,7 +11,8 @@
     "download-assets": "node scripts/download-images.mjs",
     "sync-images": "node scripts/sync-downloaded-images.mjs",
     "fix-images": "node scripts/fix-corrupt-images.mjs",
-    "content:build": "npm run extract && npm run download-assets"
+    "content:build": "npm run extract && npm run download-assets",
+    "hero:process": "node scripts/process-hero-images.mjs"
   },
   "dependencies": {
     "next": "16.2.4",
@@ -25,6 +26,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.4",
+    "sharp": "^0.34.5",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
